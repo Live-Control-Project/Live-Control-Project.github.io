@@ -1,7 +1,5 @@
 esp_toml_version = 1.0
 
-multipart = true
-chip = "esp32-c6"
 # Base URL of the file server where the images are available
 firmware_images_url = "https://live-control-project.github.io/bin/"
 
