@@ -3,7 +3,7 @@ esp_toml_version = 1.0
 # Base URL of the file server where the images are available
 firmware_images_url = "https://live-control-project.github.io/bin/"
 
-supported_apps = ["ESP_matter_Controller", "OTDisplay"]
+supported_apps = ["ESP_matter_Controller"]
 
 [ESP_matter_Controller]
 chipsets = ["ESP32-H2","ESP32-S3","ESP32-C6"]
@@ -12,11 +12,3 @@ image.esp32-s3 = "esp32s3_controller.bin"
 image.esp32-c6 = "esp32c6_controller.bin"
 ios_app_url = ""
 android_app_url = ""
-
-multipart = true
-chip = "esp32-s3"
-
-[OTDisplay]
-chipsets = ["ESP32-S3"]
-image.esp32-s3.parts = ["boot_app0.bin","bootloader.bin","firmware.bin","partitions.bin","littlefs.bin"]
-image.esp32-s3.addresses = ["0xe000","0x1000","0x10000","0x8000","0x910000"]
