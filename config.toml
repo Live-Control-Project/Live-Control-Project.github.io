@@ -3,7 +3,7 @@ esp_toml_version = 1.0
 multipart = true
 chip = "esp32-c6"
 # Base URL of the file server where the images are available
-firmware_images_url = "https://github.com/Live-Control-Project/ESP_MATTER_CONTROLLER/blob/main/bin/"
+firmware_images_url = "https://live-control-project.github.io/bin/"
 
 supported_apps = ["ESP32-H2", "ESP32-S3", "ESP32-C6"]
 
