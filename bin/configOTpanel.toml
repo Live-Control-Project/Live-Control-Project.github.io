@@ -1,19 +1,19 @@
 esp_toml_version = 1.0
 
 # This should be a publicly accessible URL of the file server where your firmware binaries are available for download
-firmware_images_url = "https://live-control-project.github.io/bin/"
+firmware_images_url = "https://thetinyfarms.github.io/web-recovery/fw/"
 
 # Apps that you support and for which the binaries are available to publish. You can have multiple apps as a comma separated list
 # The launch pad UI will automatically show these Apps in the available apps dropdown
 # There should be a config section per listed App
-supported_apps = ["OTDisplay"]
+supported_apps = ["tinyfarms_recovery"]
 
 multipart = true
 chip = "esp32-s3"
 
-[OTDisplay]
+[tinyfarms_recovery]
 # ESP32 Chipsets for which you have a supported Firmware App. Define a property for each supported chipset in the given format.
 chipsets = ["ESP32-S3"]
 # Configure the name of the binary file
-image.esp32-s3.parts = ["boot_app0.bin","bootloader.bin","firmware.bin","partitions.bin","littlefs.bin"]
-image.esp32-s3.addresses = ["0xe000","0x1000","0x10000","0x8000","0x910000"]
+image.esp32-s3.parts = ["bootloader.bin","partitions.bin","ota_data_initial.bin","firmware-esp32_s3_devkit.bin"]
+image.esp32-s3.addresses = ["0x0","0x8000","0xe000","0x20000"]
