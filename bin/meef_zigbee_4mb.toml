@@ -7,6 +7,6 @@ supported_apps = ["meef_zigbee_4mb"]
 
 [meef_zigbee_4mb]
 chipsets = ["ESP32-C6"]
-image.esp32-C6 = "meef_zigbee_4mb.bin"
+image.esp32-c6 = "meef_zigbee_4mb.bin"
 ios_app_url = ""
 android_app_url = ""
