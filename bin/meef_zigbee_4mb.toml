@@ -1,0 +1,12 @@
+esp_toml_version = 1.0
+
+# Base URL of the file server where the images are available
+firmware_images_url = "https://live-control-project.github.io/bin/"
+
+supported_apps = ["meef_zigbee_4mb"]
+
+[meef_zigbee_4mb]
+chipsets = ["ESP32-C6"]
+image.esp32-C6 = "meef_zigbee_4mb.bin"
+ios_app_url = ""
+android_app_url = ""
